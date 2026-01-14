@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="UK rental prices & trends 2026 – accurate data for renters and landlords in the North East, Newcastle & surrounding areas."/>
+  <title>RentWise UK – Rental Prices & Trends 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0066cc;
+      --primary-dark: #004c99;
+      --light: #f8f9fa;
+      --dark: #212529;
+      --gray: #6c757d;
+    }
 
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: var(--light);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 2rem; margin: 2rem 0 1rem; }
+    h3 { font-size: 1.5rem; margin: 1.5rem 0 0.75rem; }
+
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 1.8rem;
+      background-color: white;
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #e9ecef;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .section {
+      padding: 4rem 0;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1.8rem;
+      text-align: center;
+    }
+
+    .card h3 { color: var(--primary); }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .hero { padding: 3rem 0 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / HERO -->
+  <header>
+    <div class="container hero">
+      <h1>RentWise UK</h1>
+      <p>Accurate rental price data & trends for January 2026</p>
+      <p>Helping renters find fair deals and landlords set competitive prices – focused on the North East & Newcastle area</p>
+      
+      <div style="margin-top: 2rem;">
+        <a href="#prices" class="btn">Check Rental Prices</a>
+        <a href="#trends" class="btn btn-outline">Latest Trends</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- CURRENT MARKET SNAPSHOT -->
+    <section class="section" id="prices">
+      <h2>Current UK & North East Rental Prices – January 2026</h2>
+      <p style="color: var(--gray); margin-bottom: 2rem;">
+        Data compiled from HomeLet, Zoopla, ONS, Goodlord & regional reports (updated January 2026)
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>UK Average</h3>
+          <p style="font-size: 2.2rem; font-weight: 700; color: var(--primary); margin: 0.8rem 0;">
+            £1,320 – £1,400 pcm
+          </p>
+          <p>Typical 2-bed property</p>
+        </div>
+
+        <div class="card">
+          <h3>North East Average</h3>
+          <p style="font-size: 2.2rem; font-weight: 700; color: var(--primary); margin: 0.8rem 0;">
+            £750 – £950 pcm
+          </p>
+          <p>Typical 2-bed property</p>
+        </div>
+
+        <div class="card">
+          <h3>Newcastle upon Tyne</h3>
+          <p style="font-size: 2.2rem; font-weight: 700; color: var(--primary); margin: 0.8rem 0;">
+            £800 – £1,100 pcm
+          </p>
+          <p>Typical 2-bed flat / house</p>
+        </div>
+      </div>
+
+      <h3 style="margin-top: 3rem;">Suggested Price Ranges – Newcastle & North East</h3>
+      <table style="width:100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 1.1rem;">
+        <thead>
+          <tr style="background: #e9ecef;">
+            <th style="padding: 1rem; text-align: left;">Property Type</th>
+            <th style="padding: 1rem; text-align: left;">Bedrooms</th>
+            <th style="padding: 1rem; text-align: left;">Suggested Rent pcm</th>
+            <th style="padding: 1rem; text-align: left;">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #dee2e6;">
+            <td style="padding: 1rem;">Studio / 1-bed flat (city centre)</td>
+            <td style="padding: 1rem;">1</td>
+            <td style="padding: 1rem;">£650 – £850</td>
+            <td style="padding: 1rem;">Higher end for modern / furnished</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #dee2e6;">
+            <td style="padding: 1rem;">2-bed flat / house</td>
+            <td style="padding: 1rem;">2</td>
+            <td style="padding: 1rem;">£800 – £1,100</td>
+            <td style="padding: 1rem;">Most common type in Newcastle</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #dee2e6;">
+            <td style="padding: 1rem;">3-bed house (suburban)</td>
+            <td style="padding: 1rem;">3</td>
+            <td style="padding: 1rem;">£950 – £1,300</td>
+            <td style="padding: 1rem;">Family homes – add £100+ for garden/parking</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- TRENDS -->
+    <section class="section" id="trends">
+      <h2>Key Rental Market Trends – January 2026</h2>
+      <ul style="list-style: none; font-size: 1.15rem;">
+        <li style="margin-bottom: 1rem;">• UK rental growth slowing to ≈ <strong>2.5%</strong> expected for 2026 (Zoopla forecast)</li>
+        <li style="margin-bottom: 1rem;">• North East still seeing stronger growth (~4–5% yoy) due to affordability</li>
+        <li style="margin-bottom: 1rem;">• Average time to let increasing (14–19 days) – more choice for renters</li>
+        <li style="margin-bottom: 1rem;">• Renters' Rights Act changes coming May 2026 – landlords preparing for periodic tenancies</li>
+      </ul>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="section" style="text-align:center; background:#fff; border-radius:12px; padding:3rem 1rem; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+      <h2>Want personalised price suggestions?</h2>
+      <p style="font-size: 1.3rem; margin: 1.5rem 0;">Coming soon: enter postcode, bedrooms & features → get instant estimate</p>
+      <a href="mailto:your@email.com?subject=Rental%20Price%20Alert%20Request" class="btn" style="font-size:1.2rem; padding:1rem 2rem;">
+        Get notified when calculator launches →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 RentWise UK • Focused on fair & accurate rental data • <a href="#" style="color:#4dabf7; text-decoration:none;">Privacy</a> • <a href="#" style="color:#4dabf7; text-decoration:none;">Contact</a></p>
+  </footer>
+
+</body>
+</html>
